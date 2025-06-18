@@ -1,71 +1,123 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>Ammonia Auto Control (AAC)</h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p><strong>Ammonia Auto Control (AAC)</strong> is a Laravel-based web application designed to monitor and report ammonia levels in automated systems. It is ideal for agricultural, environmental, or industrial setups where gas detection and reporting are essential.</p>
 
-## About Laravel
+<hr>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>🛠️ Features</h2>
+<ul>
+  <li>🔐 <strong>Login Authentication</strong> – Secure user login with validation</li>
+  <li>📊 <strong>Ammonia Reports</strong> – Real-time data display of ammonia readings</li>
+  <li>📖 <strong>Help Documentation</strong> – Onboard guide for end-users</li>
+  <li>🧠 Clean MVC structure with Blade templating</li>
+</ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<hr>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h2>📁 Project Structure (Key Files)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>resources/views/login.blade.php</code></td>
+      <td>Login page template</td>
+    </tr>
+    <tr>
+      <td><code>resources/views/reports.blade.php</code></td>
+      <td>Displays ammonia reading reports in a table</td>
+    </tr>
+    <tr>
+      <td><code>resources/views/help.blade.php</code></td>
+      <td>Static help/FAQ content</td>
+    </tr>
+    <tr>
+      <td><code>.env</code></td>
+      <td>Environment config (not tracked)</td>
+    </tr>
+    <tr>
+      <td><code>routes/web.php</code></td>
+      <td>Web routes definition</td>
+    </tr>
+  </tbody>
+</table>
 
-## Learning Laravel
+<hr>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h2>📸 UI Summary</h2>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h3>🔐 Login Page</h3>
+<ul>
+  <li>Includes branding/logo</li>
+  <li>Email/password inputs</li>
+  <li>Error display and form validation</li>
+</ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h3>📊 Reports Page</h3>
+<ul>
+  <li>Dynamic data table with timestamps</li>
+  <li>Designed for responsiveness</li>
+</ul>
 
-## Laravel Sponsors
+<h3>📘 Help Page</h3>
+<ul>
+  <li>Explains how to use the system</li>
+  <li>Includes step-by-step guidance</li>
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<hr>
 
-### Premium Partners
+<h2>🚀 Getting Started</h2>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<h3>📦 Requirements</h3>
+<ul>
+  <li>PHP 8.0+</li>
+  <li>Laravel 10+</li>
+  <li>MySQL or equivalent</li>
+  <li>Composer</li>
+</ul>
 
-## Contributing
+<h3>🔧 Installation</h3>
+<pre><code>
+git clone https://github.com/qppd/AmmoniaAutoControl.git
+cd AmmoniaAutoControl
+composer install
+cp .env.example .env
+php artisan key:generate
+</code></pre>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<p>Edit your <code>.env</code> file and set the database credentials.</p>
 
-## Code of Conduct
+<h3>▶️ Running the App</h3>
+<pre><code>php artisan serve</code></pre>
+<p>Open your browser and visit <code>http://localhost:8000</code></p>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<hr>
 
-## Security Vulnerabilities
+<h2>🧹 Notes</h2>
+<ul>
+  <li>Secrets (e.g., <code>firebase2.json</code>) are excluded from Git using <code>.gitignore</code>.</li>
+  <li>Uses Bootstrap for layout and responsiveness.</li>
+  <li>Run migrations with:</li>
+</ul>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<pre><code>php artisan migrate</code></pre>
 
-## License
+<hr>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# AmmoniaAutoControl
-IoT Chicken Manure Cleaner Control &amp; Monitoring Web App
->>>>>>> e8f6b488bb6af78be28b3dfc8ab0fa86263c2ed3
+<h2>📄 License</h2>
+<p>This project is open-source under the <strong>MIT License</strong>.</p>
+
+<hr>
+
+<h2>🤝 Contributions</h2>
+<p>Contributions are welcome. Please open an issue or pull request for major changes.</p>
+
+<hr>
+
+<h2>📬 Contact</h2>
+<p>Maintained by <a href="https://github.com/qppd" target="_blank">QPPD</a>. For questions or issues, use the GitHub issue tracker.</p>
